@@ -21,7 +21,7 @@ class AppRouter {
       ShellRoute(
         navigatorKey: _shellNavigator,
         builder: (BuildContext ctx, GoRouterState state, Widget child) {
-          return NavigationPage(child: child);
+          return NavigationPage(key: state.pageKey, child: child);
         },
         routes: [
           GoRoute(
